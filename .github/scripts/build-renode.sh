@@ -4,7 +4,7 @@ if [ -z "$RUNNER_OS" ]; then
     exit -1
 fi
 
-git clone --single-branch --recurse-submodules -b "${RENODE_GITREV:-master}" https://github.com/renode/renode.git
+git clone --single-branch --recurse-submodules -b "${RENODE_GITREV:-vil-interrupt-undef}" https://github.com/p-woj/renode.git
 
 if [ "$RUNNER_OS" = "Linux" ]; then
     sudo apt-get update
